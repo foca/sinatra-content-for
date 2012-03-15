@@ -1,3 +1,11 @@
+= This project is no longer maintained. See http://github.com/sinatra/sinatra-contrib
+
+Sinatra::Contrib is a project maintained by the sinatra core team that packages
+several small widely used extensions, such as content_for. Please install that
+as that is actively maintained and compatibility is ensured with all future
+versions of sinatra.
+
+
 = ContentFor
 
 Small extension for the Sinatra[http://sinatrarb.com] web framework
@@ -6,7 +14,7 @@ that allows you to use the following helpers in your views:
     <% content_for :some_key do %>
       <chunk of="html">...</chunk>
     <% end %>
-    
+
     <% yield_content :some_key %>
 
 This allows you to capture blocks inside views to be rendered later
@@ -20,7 +28,7 @@ following:
       %chunk{ :of => "html" } ...
 
     = yield_content :some_key
- 
+
 <b>Note</b> that with ERB <tt>yield_content</tt> is called <b>without</b>
 an '=' block (<tt><%= %></tt>), but with Haml it uses <tt>= yield_content</tt>.
 
